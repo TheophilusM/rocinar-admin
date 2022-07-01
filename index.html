@@ -15,12 +15,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- ###### Sidebar ###### -->
+        <!-- ###### Left Sidebar ###### -->
         <aside>
             <div class="top">
                 <div class="logo">
                     <img src="./assets/logo.png" alt="">
-                    <h2>ROCI<span class="danger">NAR</span></h2>
+                    <h2>ROCI<span style="color: #00cdf1;">NAR</span></h2>
                     <div class="close" id="close-btn">
                         <span class="material-icons-sharp">close</span>
                     </div>
@@ -79,6 +79,7 @@
                 <input type="date" name="date" id="">
             </div>
 
+            <!-- Cards -->
             <div class="insights">
                 <div class="sales">
                     <span class="material-icons-sharp">analytics</span>
@@ -135,9 +136,91 @@
                     <small class="text-muted">Last 24 Hours</small>
                 </div>
             </div>
+
+            <!-- Recent Orders -->
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>83432</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>83432</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>83432</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>83432</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>83432</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>83432</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
         </main>
 
-        <!-- ######  ###### -->
+        <!-- ###### Right Sidebar ###### -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Theo</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./assets/theo.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
