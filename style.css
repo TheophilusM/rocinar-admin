@@ -36,6 +36,15 @@
   --transition: all 300ms ease;
 }
 
+.dark-theme-variables {
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-light: rgba(0,0,0,0.4);
+  --color-dark-variant: #677483;
+  --color-background: #181a1e;
+   --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +66,7 @@ body {
   font-family: poppins , sans-serif;
   font-size: 0.88rem;
   background: var(--color-background);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   color: var(--color-dark);
 }
 
@@ -547,6 +556,10 @@ main .recent-orders a {
     grid-template-columns: 7rem auto 23rem;
   }
 
+  aside {
+    display: block;
+  }
+
   aside .logo h2{
     display: none;
   }
@@ -600,7 +613,7 @@ main .recent-orders a {
 
   aside {
     position: fixed;
-    left: 0;
+    left: -100%;
     background-color: var(--color-white);
     width: 18rem;
     z-index: 3;
@@ -608,6 +621,15 @@ main .recent-orders a {
     height: 100vh;
     padding-right: var(--card-padding);
     display: none;
+    animation: showMenu 400ms ease forwards;
+    /* transition: var(--transition); */
+  }
+
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+    
   }
 
   aside .logo {
