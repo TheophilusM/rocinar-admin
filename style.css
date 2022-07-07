@@ -558,6 +558,7 @@ main .recent-orders a {
 
   aside {
     display: block;
+    z-index: 0;
   }
 
   aside .logo h2{
